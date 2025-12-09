@@ -3,7 +3,10 @@ import pandas as pd
 import numpy as np
 import yfinance as yf
 import time
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class FinnhubSentiment:
     """
@@ -201,7 +204,7 @@ def download_prices(symbol, start, end):
 if __name__ == "__main__":
     
     # 1. Configuration
-    API_KEY = "d4ru51pr01qi8t3ir8g0d4ru51pr01qi8t3ir8gg"  # Gratuit sur finnhub.io
+    API_KEY = os.getenv("FIN_KEY")
     SYMBOL = "^GSPC"
     START = "2000-01-03"
     END = "2025-12-08"
