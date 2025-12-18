@@ -110,8 +110,8 @@ CUDA-compatible GPU (optional but recommended)
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/financial-forecasting-transformers.git
-cd financial-forecasting-transformers
+git clone https://github.com/Samisb2002/Prevision-financiere
+cd Prevision-financiere
 ```
 
 2. **Install dependencies**
