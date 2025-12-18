@@ -94,43 +94,6 @@ This project implements a comprehensive financial forecasting system that predic
 
 ---
 
-## 📁 Project Structure
-
-```
-├── Data/
-│   ├── Apple.csv                    # Raw stock price data
-│   ├── Applefeatures.csv           # Computed technical indicators
-│   ├── SP500_features.csv          # S&P 500 features dataset
-│   └── sentiment_features.csv      # Sentiment analysis results
-│
-├── models/
-│   ├── TFT.py                      # Temporal Fusion Transformer implementation
-│   ├── informer.py                 # Informer model architecture
-│   └── lstm.py                     # LSTM baseline model
-│
-├── data/
-│   ├── data_download.py            # Yahoo Finance data fetcher
-│   ├── data_loader.py              # Data loading utilities
-│   ├── data_preparation.py         # Feature engineering & preprocessing
-│   ├── calcul_features.py          # Technical indicator computation
-│   └── preprocessing.py            # Sequence creation & scaling
-│
-├── training/
-│   ├── train_tft.py                # TFT training pipeline
-│   ├── trainer.py                  # Generic training loop
-│   └── evaluator.py                # Model evaluation metrics
-│
-├── sentiment/
-│   └── sentiment-analysis.py       # Finnhub API integration
-│
-├── inference/
-│   ├── inference.py                # Model prediction & visualization
-│   └── visualization.py            # Plotting utilities
-│
-├── main.py                         # Main execution script
-├── index_.ipynb                    # Exploratory data analysis notebook
-└── requirements.txt                # Python dependencies
-```
 
 ---
 
