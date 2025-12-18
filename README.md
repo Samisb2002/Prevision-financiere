@@ -162,29 +162,6 @@ This will create visualizations in the `results/` directory showing predictions 
 
 ---
 
-## 📈 Results
-
-### Model Performance
-
-| Model    | Horizon | MAE   | RMSE  | Directional Accuracy |
-|----------|---------|-------|-------|---------------------|
-| TFT      | 1-day   | 0.008 | 0.012 | 56.2%              |
-| TFT      | 5-day   | 0.018 | 0.025 | 58.7%              |
-| TFT      | 20-day  | 0.035 | 0.048 | 61.3%              |
-| Informer | 1-day   | 0.009 | 0.014 | 54.8%              |
-| LSTM     | 1-day   | 0.010 | 0.015 | 53.5%              |
-
-### Sample Predictions
-
-The model generates three quantile predictions (10%, 50%, 90%) providing uncertainty estimates:
-
-```
-📊 Horizon 1-Day Prediction
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
- P10: -0.005  (Lower bound)
- P50:  0.002  (Median forecast)
- P90:  0.009  (Upper bound)
-```
 
 ---
 
