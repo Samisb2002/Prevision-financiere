@@ -31,7 +31,7 @@ This project implements a comprehensive financial forecasting system that predic
 
 ### Model Implementations
 
-#### 1. **Temporal Fusion Transformer (TFT)** ⭐ Main Model
+#### 1. **Temporal Fusion Transformer (TFT)** 
 - Multi-head attention mechanism for temporal pattern recognition
 - Gated Residual Networks (GRN) for feature selection
 - Variable Selection Network (VSN) for identifying relevant features
