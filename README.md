@@ -281,57 +281,6 @@ The project includes comprehensive exploratory data analysis (see `index_.ipynb`
 - **Temporal Patterns**: ACF/PACF plots for lag structure identification
 - **Volatility Clustering**: GARCH effects visualization
 
-### Key Statistics (S&P 500: 2000-2025)
-
-```
-Period: 2000-01-03 to 2025-12-08 (6,523 days)
-Total Return: +370.48%
-Average Daily Return: 0.0312%
-Volatility (σ): 1.22%
-Maximum Drawdown: -57.8% (2009 Financial Crisis)
-```
-
----
-
-## 🛠️ Configuration
-
-### Hyperparameters (TFT)
-
-```python
-# Model Architecture
-d_model = 128              # Hidden dimension
-n_heads = 8                # Attention heads
-dropout = 0.1              # Dropout rate
-
-# Training
-batch_size = 64
-learning_rate = 0.0005
-epochs = 100
-window_size = 60           # Input sequence length
-
-# Data Split
-train_ratio = 0.6
-val_ratio = 0.2
-test_ratio = 0.2
-```
-
-### Modifying Configurations
-
-Edit the `CONFIG` dictionary in `main.py`:
-
-```python
-CONFIG = {
-    "symbol": "^GSPC",           # S&P 500 index
-    "start": "2010-01-01",
-    "end": "2025-01-01",
-    "window_size": 60,
-    "epochs": 50,
-    "batch_size": 32,
-    "horizons": [1, 5, 20]       # Prediction horizons
-}
-```
-
----
 
 ## 📚 Dependencies
 
@@ -362,79 +311,9 @@ tqdm>=4.65.0
 
 ---
 
-## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
-### Development Guidelines
-
-- Follow PEP 8 style guidelines
-- Add docstrings to all functions
-- Include unit tests for new features
-- Update documentation as needed
-
----
-
-## 📝 Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@misc{iddouch2025multihorizon,
-  title={Multi-Horizon Financial Forecasting with Transformers},
-  author={Iddouch, Ikram and Sbai, Sami},
-  year={2025},
-  publisher={GitHub},
-  howpublished={\\url{https://github.com/yourusername/financial-forecasting-transformers}}
-}
-```
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **Temporal Fusion Transformer**: Based on [Lim et al. (2021)](https://arxiv.org/abs/1912.09363)
-- **Informer**: Based on [Zhou et al. (2021)](https://arxiv.org/abs/2012.07436)
-- **Data Sources**: Yahoo Finance, Finnhub API
-- **Course Instructor**: DATA931 - Time Series Analysis
-
----
-
-## 📧 Contact
-
-For questions or collaborations:
-
-- **Ikram IDDOUCH** - [email@example.com](mailto:email@example.com)
-- **Sami SBAI** - [email@example.com](mailto:email@example.com)
-
-**Project Link**: [https://github.com/yourusername/financial-forecasting-transformers](https://github.com/yourusername/financial-forecasting-transformers)
-
----
-
-## 🔮 Future Work
-
-- [ ] Add transformer attention visualization
-- [ ] Implement ensemble methods
-- [ ] Extend to multi-asset portfolio optimization
-- [ ] Real-time prediction API
-- [ ] Integration with trading simulators
-- [ ] Add explainability features (SHAP values)
-- [ ] Support for cryptocurrency data
-- [ ] Backtesting framework with transaction costs
-
----
 
 <div align="center">
 
