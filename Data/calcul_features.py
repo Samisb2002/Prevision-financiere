@@ -5,7 +5,7 @@ import numpy as np
 # 0. CHARGEMENT DES DONNÉES
 # =====================================
 
-df = pd.read_csv("Data/SP500_2000.csv", parse_dates=['Date'])
+df = pd.read_csv("Data/Apple.csv", parse_dates=['Date'])
 df = df.sort_values("Date")
 df.set_index("Date", inplace=True)
 
@@ -94,5 +94,5 @@ df["OBV"] = obv
 # 7. SAUVEGARDE FINALE
 # =====================================
 
-df.to_csv("Data/SP500_features.csv")
+df.to_csv("Data/Applefeatures.csv")
 print("🎉 Tous les indicateurs ont été calculés dans sp500_features.csv")

@@ -1,7 +1,11 @@
-# main.py
+import sys
+from pathlib import Path
 
-from data.data_loader import load_data
-from data.preprocessing import prepare_data
+# Ajouter la racine du projet au path
+sys.path.insert(0, str(Path(__file__).parent))
+
+from Data.data_loader import load_data
+from Data.preprocessing import prepare_data
 
 from models.lstm import build_lstm
 from models.informer import build_informer_model
@@ -45,7 +49,7 @@ MODELS = {
 
 def run_experiment():
 
-    print("\n📥 Chargement des données...")
+    print("\n🔥 Chargement des données...")
     df = load_data(
         CONFIG["symbol"],
         CONFIG["start"],
@@ -99,7 +103,7 @@ def run_experiment():
             plot_prediction(
                 y_true,
                 y_pred,
-                title=f"{model_name} – Horizon {horizon} jour(s)"
+                title=f"{model_name} — Horizon {horizon} jour(s)"
             )
 
             print(
